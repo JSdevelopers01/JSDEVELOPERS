@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Developers</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#0f172a;color:#fff;scroll-behavior:smooth}
+
+header{position:fixed;width:100%;top:0;background:#020617;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;z-index:1000}
+header h1{color:#38bdf8}
+nav a{color:#fff;margin:0 15px;text-decoration:none;transition:.3s}
+nav a:hover{color:#38bdf8}
+
+.hero{height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;padding-top:60px}
+.hero h2{font-size:45px;margin-bottom:10px}
+.hero p{color:#94a3b8;margin-bottom:20px}
+.btn{padding:12px 25px;background:#38bdf8;border:none;border-radius:5px;cursor:pointer;font-weight:bold}
+.btn:hover{background:#0ea5e9}
+
+.section{padding:80px 20px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:30px}
+.card{background:#1e293b;padding:25px;border-radius:10px;transition:.4s}
+.card:hover{transform:translateY(-10px) scale(1.03)}
+
+form{max-width:400px;margin:auto;display:flex;flex-direction:column;gap:12px}
+input{padding:12px;border:none;border-radius:5px}
+
+footer{background:#020617;text-align:center;padding:20px;margin-top:30px}
+
+.toast{position:fixed;bottom:20px;right:20px;background:#38bdf8;padding:15px;border-radius:5px;display:none}
+
+/* WhatsApp Button */
+.whatsapp{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#25D366;
+padding:15px 18px;
+border-radius:50%;
+cursor:pointer;
+font-size:20px;
+}
+
+.login-box{
+max-width:300px;
+margin:auto;
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+padding:10px;
+}
+
+.login-box input{
+width:100%;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>JS Developers</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#internship">Internship</a>
+<a href="#login">Login</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Build Your Future with JS Developers</h2>
+<p>Web Development | App Development | Internships</p>
+<a href="https://jsdevelopers01.github.io/apply-now-/" target="_blank" rel="noopener noreferrer" class="btn" style="text-decoration:none;display:inline-block;">Apply Now</a>
+</section>
+
+<section id="services" class="section">
+<h2>Our Services</h2>
+<div class="cards">
+<div class="card"><h3>Web Development</h3></div>
+<div class="card"><h3>App Development</h3></div>
+<div class="card"><h3>UI/UX Design</h3></div>
+</div>
+</section>
+
+<section id="internship" class="section">
+<h2>Internships</h2>
+
+<div style="max-width:900px;margin:auto;text-align:left;line-height:1.6;color:#cbd5f5">
+
+<h3 style="color:#38bdf8">🚀 Build Your Future with JS Developers Internship</h3>
+
+<p>Are you tired of just watching tutorials and still not feeling confident?<br>
+Now it’s time to <b>stop watching and start building</b>.</p>
+
+<p>At <b>JS Developers</b>, we give you something most students never get —<br>
+👉 <b>Real Experience + Real Skills + Real Growth</b></p>
+
+<p>Yaha tum sirf seekhoge nahi…<br>
+👉 Tum <b>actual projects banaoge</b><br>
+👉 Tum <b>real developer ki tarah kaam karoge</b><br>
+👉 Tum <b>apna portfolio strong banaoge</b></p>
+
+<h4 style="margin-top:20px;color:#38bdf8">💡 Why This Internship is Different?</h4>
+<ul>
+<li>✔ Live project experience</li>
+<li>✔ Step-by-step mentorship</li>
+<li>✔ Industry-level coding skills</li>
+<li>✔ Real problem solving approach</li>
+<li>✔ Portfolio ready for jobs & freelancing</li>
+</ul>
+
+<h4 style="margin-top:20px;color:#38bdf8">🎯 Skills You Will Master</h4>
+<ul>
+<li>HTML, CSS, JavaScript (Beginner to Advanced)</li>
+<li>Responsive Website Development</li>
+<li>Real-world Project Building</li>
+<li>App Development Basics</li>
+<li>GitHub & Portfolio Setup</li>
+</ul>
+
+<h4 style="margin-top:20px;color:#38bdf8">🏆 What You Get</h4>
+<ul>
+<li>✨ Internship Certificate</li>
+<li>✨ Real Development Experience</li>
+<li>✨ Strong Portfolio</li>
+<li>✨ Job & Freelancing Ready Skills</li>
+</ul>
+
+<h4 style="margin-top:20px;color:#38bdf8">⚡ Limited Seats — Serious Candidates Only</h4>
+<p>Hum har kisi ko select nahi karte.<br>
+Sirf unhe choose karte hain jo <b>growth ke liye serious hain</b>.</p>
+
+<h4 style="margin-top:20px;color:#38bdf8">🚀 Your Future Starts Here</h4>
+<p>Aaj decision lo —<br>
+👉 Ya to time waste karte raho<br>
+👉 Ya ek step lo aur apni life change karo</p>
+
+<p style="margin-top:15px;font-weight:bold;color:#38bdf8">💬 Click Apply Now & Join JS Developers Today</p>
+
+</div>
+
+</section>
+
+<section id="login" class="section">
+<h2>Login / Signup</h2>
+<div class="login-box">
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button class="btn" onclick="signup()">Signup</button>
+<button class="btn" onclick="login()">Login</button>
+</div>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<div class="whatsapp" onclick="openWhatsApp()">💬</div>
+
+<footer>
+<p>© 2026 JS Developers | Contact: 9653590754</p>
+</footer>
+
+<script>
+function scrollToSection(){
+ document.getElementById('login').scrollIntoView({behavior:'smooth'});
+}
+
+function showToast(msg){
+ let toast = document.getElementById("toast");
+ toast.innerText = msg;
+ toast.style.display = "block";
+ setTimeout(()=>{toast.style.display="none"},3000);
+}
+
+function signup(){
+ let user = document.getElementById("username").value;
+ let pass = document.getElementById("password").value;
+
+ if(user && pass){
+ localStorage.setItem("user", user);
+ localStorage.setItem("pass", pass);
+ showToast("Signup Successful");
+ }
+}
+
+function login(){
+ let user = document.getElementById("username").value;
+ let pass = document.getElementById("password").value;
+
+ let savedUser = localStorage.getItem("user");
+ let savedPass = localStorage.getItem("pass");
+
+ if(user === savedUser && pass === savedPass){
+ showToast("Login Successful");
+ }else{
+ showToast("Invalid Details");
+ }
+}
+
+function openWhatsApp(){
+ let number = "919653590754";
+ let msg = "Hello JS Developers, I want to apply for internship";
+ window.open(`https://wa.me/${number}?text=${encodeURIComponent(msg)}`, '_blank');
+}
+</script>
+
+</body>
+</html>
